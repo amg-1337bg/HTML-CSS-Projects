@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+.container {
+    width: 1090px;
+    margin: auto;
+}
+
+/* NAVBAR CSS */
+.navbar{
+    height: 100vh;
+    position: relative;
+    width: fit-content;
+    float: right;
+}
+
+/* background CSS */
+.bg{
+    width: 100%;
+    height: 100%;
+}
+.bg img{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header CSS */
+.header{
+    position: relative;
+    height: 50vh;
+}
+.header .fhead{
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .fhead .logo a{
+    text-decoration: none;
+    color: #a3a7a9;
+    margin: 0;
+    font-size: 1.0em;
+}
+.header .fhead .logo a span{
+    font-weight: bold;
+    color: white;
+    font-size: 1.3em;
+}
+.header .fhead .menu a{
+    text-decoration: none;
+    color: white;
+}
+.header .fhead .menu a i{
+    margin: 5px;
+}
+
+.header .shead{
+    text-align: center;
+    color: white;
+}
+.header .shead .titles{
+    margin-top: 20em;
+}
+.header .shead .titles hr{
+    margin: 0 25%;
+}
+.shead .dots {
+    text-align: center;
+}
+.shead .dots ul li{
+    display: inline-block;
+    color: black;
+    margin: 10px;
+}
+
+/* articles CSS */
+
+.articles {
+    position: relative;
+    background-color: #f2f2f2;
+}
+.articles .details{
+    display: flex;
+    justify-content: space-around;
+}
+
+.articles .card {
+    text-align: center;
+    margin: 4em 2em;
+    background-color: white;
+    width: 100%;
+}
+.articles .card h3{
+    margin-top: 2em;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 1em;
+    color: #acacac;
+}
+.articles .card hr{
+    margin: 0 25%;
+}
+.articles .card h1{
+    margin: 0;
+    padding: 0;
+}
+.articles .card p{
+    text-align: start;
+    margin: 2em 10%;
+    color: #acacac;
+    line-height: 1.5em;
+}
+.articles .card button{
+    background: none;
+    border: solid 2px #acacac;
+    padding: 10px 20px;
+    color: #acacac;
+    margin-bottom: 2em;
+}
+.articles .card button:hover{
+    background-color: #cfcfcf57;
+}
+
+/* part CSS */
+
+.part {
+    position: relative;
+    text-align: center;
+    padding: 3em 0;
+}
+
+.part p{
+    letter-spacing: 2px;
+    color: #acacac;
+}
+.part hr{
+    margin: 0 25%;
+}
+.part h2{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* summary CSS */
+.summary{
+    position: relative;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.summary .sum-part1{
+    padding: 3em 0;
+}
+
+.summary .sum-part1 p{
+    color: #acacac;
+    letter-spacing: 2px;
+}
+.summary .sum-part1 hr{
+    margin: 0 25%;
+}
+.summary .sum-part1 h1{
+    margin: 0;
+}
+
+.summary .sum-part2{
+    display: flex;
+}
+.summary .sum-part2 .card{
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    margin: 2em 0.5em;
+}
+.summary .sum-part2 .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.summary .sum-part3{
+    display: flex;
+}
+.summary .sum-part3 .card{
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    margin: 2em 0.5em;
+}
+.summary .sum-part3 .card img{
+    width: 100%;
+    height: 100%;
+}
+
+/* footer CSS */
+
+.footer{
+    position: relative;
+    background-color: black;
+    text-align: center;
+    padding: 2em;
+    padding-bottom: 3em;
+}
+
+.footer i{
+    color: #acacac;
+    margin: 10px;
+}
+
+@keyframes hoveraction{
+    0% {color: #acacac;}
+    100% {color: white;}
+}
+
+.footer i:hover{
+    animation-name: hoveraction;
+    animation-duration: 0.5s;
+    color: white;
+}
+.footer p{
+    color: white;
+}
+
+/* custom CSS */
+.bordd{
+    border: solid 2px white;
+}
+
+/* Media CSS */
