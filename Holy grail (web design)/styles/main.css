@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+div{
+}
+
+/* Header Css */
+.header{
+    background-color: #83caff;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+}
+
+.details{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.details .nav{
+    background-color: #cc99cc;
+    text-align: center;
+    width: 15%;
+    font-size: 2em;
+}
+.details .content{
+    background-color: #ffcccc;
+    flex-grow:1;
+    width: 70%;
+    text-align: center;
+    overflow: auto;
+}
+
+.details .content p{
+    margin: 0 2em 3em 2em;
+}
+.details .ads{
+    text-align: center;
+    width: 15%;
+    background-color: #cc99cc;
+}
+.details .ads h3{
+    margin: 1em 1em;
+    padding: 0 0 3em 0;
+}
+
+/* Footer CSS */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    background-color:  #83caff;
+    align-self: stretch;
+}
+
+/* Custom CSS */
+.bordd{
+    border: black 3px solid;
+}
