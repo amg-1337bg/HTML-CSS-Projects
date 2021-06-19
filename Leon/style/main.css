@@ -1,0 +1,162 @@
+/* Start Global Rules */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto;
+}
+
+
+/* Header */
+
+.header{
+	position: absolute;
+	width: 100%;
+}
+
+.header .container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .logo {
+	width: 70px;
+}
+
+.header .menu{
+	position: relative;
+}
+
+.header .menu .icon {
+	width: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+.header .menu:hover .icon span:nth-child(2){
+	width: 100%;
+}
+
+.header .menu .icon span {
+	height: 2px;
+	width: 100%;
+	margin-bottom: 5px;
+	background-color: rgb(52, 52, 52);
+}
+.header .menu .icon span:nth-child(2){
+	width: 70%;
+	transition: 0.3s;
+}
+.header .menu ul::before{
+	content: "";
+}
+.header .menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #2c4755;
+	position: absolute;
+	right: 0;
+	min-width: 200px;
+	display: none;
+	border-radius: 3px;
+}
+.header .menu:hover ul{
+	display: block;
+}
+.header .menu ul li{
+	padding: 10px 15px;
+}
+.header .menu ul li:hover a {
+	padding-left: 10px;
+}
+.header .menu ul li:not(:last-child){
+	border-bottom: 1px solid white;
+}
+.header .menu ul li a{
+	text-decoration: none;
+	color: white;
+	transition: 0.5s;
+}
+
+.header .header_desc{
+	height: 300px;
+	width: 100%;
+	margin: 0;
+	background-color: rgb(210, 210, 210);
+	text-align: center;
+}
+.header .header_desc h1{
+	color: #10cab7;
+	margin:0;
+	padding-top: 30px;
+}
+.header .header_desc p{
+	font-weight: 300;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.header .header_cards
+{
+	width: 100%;
+	display: flex;
+	padding: 10px 20px;
+	margin: 40px 0;
+}
+
+.header .header_cards .card{
+	width: 100%;
+	margin: 0 20px;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.header .header_cards .card i {
+	color: #10cab7;
+	font-size: xxx-large;
+}
+.header .header_cards .card h3{
+	font-weight: 400;
+}
+.header .header_cards .card p{
+	font-weight: 50;
+	line-height: 25px;
+	font-size: 15px;
+}
+
+@media (min-width: 576px){
+	.container {
+		width: 540px;
+	}
+}
+@media (min-width: 768px){
+	.container {
+		width: 720px;
+	}
+}
+@media (min-width: 992px){
+	.container {
+		width: 960px;
+	}
+}
+@media (min-width: 1200px){
+	.container {
+		width: 1140px;
+	}
+}
+@media (min-width: 1400px){
+	.container {
+		width: 1320px;
+	}
+}
