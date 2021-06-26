@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    margin: auto;
+    /* background-color: aquamarine; */
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (maxx-width: 576px) {
+    .container{
+        width: 570px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container{
+        width: 760px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container{
+        width: 980px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container{
+        width: 1100px;
+    }
+}
+
+/* START Header */
+
+.header {
+    /* width: 100%; */
+    padding: 15px 0 15px 0;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img{
+    width: 200px;
+}
+.header .links{
+    width: 50%;
+}
+
+.header .links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header .links ul li{
+    list-style: none;
+    font-size: medium;
+    text-transform: uppercase;
+}
+.header .links ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header .links ul li a:hover{
+    border-bottom: 1px solid black;
+}
+/* END Header *
+
+/* START Welcome section */
+
+.welcome {
+    margin-top: 40px;
+    width: 100%;
+    height: fit-content;
+}
+
+.welcome .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.welcome .welcome_msg{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome .welcome_msg h1{
+    margin: 0;
+    font-weight: 900;
+    font-size: 50px;
+}
+.welcome .welcome_msg p{
+    font-weight: 300;
+    font-size: medium;
+}
+.welcome .welcome_msg button {
+    align-self: flex-start;
+}
+.welcome .welcome_img{
+    width: 50%;
+}
+.welcome .welcome_img img{
+    width: 100%;
+}
+
+/* END Welcome section */
+
+/* Start Work Section */
+.work{
+    width: 100%;
+    height: 100vh;
+}
+
+.work .container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.work .filter
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.work h1{
+    width: 100%;
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.work .filter{
+    width: 100%;
+}
+
+.work .filter ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.work .filter ul li{
+    list-style: none;
+}
+.work .filter ul li:not(:last-child){
+    margin-right: 30px;
+}
+.work .filter ul li a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.work .filter ul li a:hover{
+    background-color: #ffe100;
+}
+
+.work .work_details{
+    width: 100%;
+    display: grid;
+    margin: 20px 0;
+    grid-template-columns: auto auto auto;
+    column-gap: 2%;
+    grid-template-rows: 300px 300px 300px;
+    row-gap: 10px;
+}
+.work .work_details div{
+    text-align: center;
+}
+.work .work_details div img{
+    width: 100%;
+    height: 100%;
+}
+
+.work .work_details div:nth-child(2){
+    grid-area: 1 / 2 / 3 / 3;
+}
+.work .work_details div:nth-child(4){
+    grid-area: 2 / 1 / 4 / 1;
+}
+.work .work_details div:nth-child(6){
+    grid-area: 2 / 3 / 4 / 3;
+}
+.work  button{
+    align-self: center;
+}
+
+/* End Work Section */
+
+
+/* Start Custom Css */
+.btn_custom{
+    border: 0;
+    background-color: #ffe100;
+    font-size: medium;
+    text-transform: uppercase;
+    padding: 15px 30px;
+}
+/* END Custom Css */
