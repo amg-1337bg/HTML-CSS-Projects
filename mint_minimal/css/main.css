@@ -198,6 +198,159 @@ body{
 
 /* End Work Section */
 
+/* Start Instances */
+.instances {
+    width: 100%;
+    padding: 30px 0;
+    background-color: rgb(219, 219, 219);
+}
+
+.instances .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.instances img{
+    width: 100px;
+}
+/* End Instances */
+
+/* Start About */
+
+.about {
+    width: 100%;
+    height: 50vh;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about h1{
+    font-weight: 900;
+    font-size: 70px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.about p{
+    width: 50%;
+    font-size: smaller;
+    margin-bottom: 30px;
+}
+.about .workers{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about .workers .card{
+    width: 30%;
+    height: 400px;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+}
+.about .workers .card .card_desc h3{
+    font-size: 15px;
+    margin: 0;
+}
+.about .workers .card .card_desc h4{
+    color: white;
+    font-size: 10px;
+    margin: 0;
+}
+.about .workers .card .card_desc{
+    padding: 10px 30px 15px 10px;
+    align-self: flex-end;
+    background-color:  #ffe100;
+}
+
+.about .workers .card:last-child{
+    background-color: white;
+    flex-direction: column;
+    align-content: center;
+}
+.about .workers .card:last-child p{
+    width: 100%;
+    padding-right: 30px;
+    font-size: small;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+}
+.about .workers .card:last-child a{
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+}
+.about .workers .card:last-child a:hover{
+    border-bottom: 1px solid black;
+}
+/* End About */
+
+/* start Blog*/
+
+.blog{
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    height: 60vh;
+}
+ .blog p{
+    /* width: 50%; */
+    font-size: smaller;
+    margin-bottom: 30px;
+}
+.blog h1{
+    font-weight: 900;
+    font-size: 70px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.blog .container{
+    display: flex;
+    flex-direction: column;
+}
+.blog .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.blog .cards .card img{
+    width: 90%;
+}
+.blog .cards .card h4{
+    font-weight: 600;
+    margin: 0;
+    padding: 20px;
+}
+.blog .cards .card p{
+    font-weight: 200;
+    padding: 0 20px 20px 20px;
+}
+
+
+/* End Blog*/
+/* Start contact us */
+.contact .container{
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact_us{
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+}
+.contact .contact_us form input{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+/* End contact us */
+
 
 /* Start Custom Css */
 .btn_custom{
