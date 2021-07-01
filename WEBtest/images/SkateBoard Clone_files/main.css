@@ -1,0 +1,9 @@
+body{
+	margin: 0;
+	height: 100vh;
+	background-image: url("../images/Sunset-from-parking-ramp.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background: linear-gradient(0 ,0 ,0 ,0, 0.5);
+}

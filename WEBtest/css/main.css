@@ -1,0 +1,111 @@
+body{
+	margin: 0;
+	height: 100vh;
+	background-image: url("../images/Sunset-from-parking-ramp.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Inter', sans-serif;
+}
+
+.container{
+	height: 90vh;
+	position: absolute;
+	background-color: #14213D;
+	border-radius: 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Start SideBar */
+
+.sidebar {
+	/* background-color: #457B9D; */
+	border-radius: 20px 0 0 20px;
+	padding: 30px;
+	overflow: auto;
+}
+
+.sidebar .logo{
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+	margin-top: 0px;
+	text-transform: lowercase;
+}
+.sidebar .menu_group{
+	position: relative;
+}
+
+.sidebar .menu_group svg{
+	width: 30px;
+	height: 30px;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.sidebar .menu_group svg .outside{
+	fill: #F68B28;
+}
+.sidebar .menu_group svg .inside{
+	fill: white;
+}
+
+.sidebar .menu_group ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	left: 0;
+}
+.sidebar .menu_group ul li{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.sidebar .menu_group h3{
+	color: #6e6f7e;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+/*  SideBar */
+
+@media (max-width: 576px) {
+	.container{
+		width: 400px;
+	}
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.container{
+		width: 570px;
+	}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.container{
+		width: 760px;
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.container{
+		width: 990px;
+	}
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.container{
+		width: 1190px;
+	}
+}
