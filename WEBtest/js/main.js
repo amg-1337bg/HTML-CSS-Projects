@@ -14,19 +14,25 @@ function getRandomColor() {
 menu_item.forEach(function(item, index){
 	item.onmouseover =  function(){
 		var pathin = item.querySelectorAll("path");
-		pathin[0].style.fill = getRandomColor();
-		pathin[1].style.fill = "#ffffff";
-		if (pathin[2] != undefined)
-			pathin[2].style.fill = "#ffffff";
+		for(let i = 0; i < pathin.length; i++){
+			if (i == 0)
+				pathin[i].style.fill = getRandomColor();
+			else{
+				pathin[i].style.fill = "#ffffff";
+			}
+		}
 	};
 	item.onmouseleave = function(){
 		var pathin = item.querySelectorAll("path");
-		pathin[0].style.fill = "#6E6F7E";
-		pathin[1].style.fill = "#AEAEC9";
-		if (pathin[2] != undefined)
-			pathin[2].style.fill = "#AEAEC9";
+		for(let i = 0; i < pathin.length; i++)
+		{
+			if (i == 0)
+				pathin[i].style.fill = "#6E6F7E";
+			else {
+				pathin[i].style.fill = "#AEAEC9";
+			}
+		}
 	};
-
 	item.addEventListener("click", function(){
 		for(let i = 0; i < menu_item.length; i++)
 		{
@@ -37,9 +43,12 @@ menu_item.forEach(function(item, index){
 			});
 		}
 		var pathin = item.querySelectorAll("path");
-		pathin[0].classList.add("active_out");
-		pathin[1].classList.add("active_in");
-		if (pathin[2] != undefined)
-			pathin[2].classList.add("active_in");
+		for(let i = 0; i < pathin.length; i++)
+		{
+			if (i == 0)
+				pathin[i].classList.add("active_out");
+			else
+				pathin[i].classList.add("active_in");
+		}
 	});
 });
